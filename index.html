@@ -1,5 +1,32 @@
 
-EDIT ON
+<html>
+    <head>
+        <title>
+            Post-its
+        </title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="//fonts.googleapis.com/css?family=Allura&subset=latin" rel="stylesheet" type="text/css">
+<style>
+* {
+ font-family: 'Allura', sans-serif;
+}
+</style>
+    </head>
+
+    <body>
+        <div id="note_adder">
+            <form>
+                <input type="text" id="new_note_text" placeholder="Note text here!" 
+                       style="width:90%"/>
+                <br/>
+                <input type="button" value="Create note!" class="note_controls" 
+                       onclick="create_note($('#new_note_text').val());">
+                <input type="button" value="Save notes!" class="note_controls"
+                       onclick="save_notes();">
+            </form>
+        </div>
+    </body>
+</html>
   <ul>
     <li>
       <a href="#">
@@ -49,9 +76,4 @@ EDIT ON
         <p>Text Content #7</p>
       </a>
     </li>
-<link href="//fonts.googleapis.com/css?family=Allura&subset=latin" rel="stylesheet" type="text/css">
-<style>
-* {
- font-family: 'Allura', sans-serif;
-}
-</style>
+
